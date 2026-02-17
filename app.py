@@ -4,6 +4,12 @@ import streamlit as st
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
+try:
+    import ollama
+    _OLLAMA_INSTALLED = True
+except ImportError:
+    _OLLAMA_INSTALLED = False
+
 
 # ---------------------------------------------------------------------------
 # Data loading
@@ -29,6 +35,50 @@ def build_embeddings(texts: tuple[str, ...]) -> np.ndarray:
     """Encode all project texts once and cache the result."""
     model = load_model()
     return model.encode(list(texts), show_progress_bar=False)
+
+
+# ---------------------------------------------------------------------------
+# Ollama – local AI comparison
+# ---------------------------------------------------------------------------
+
+@st.cache_data(ttl=60)
+def get_ollama_models() -> list[str] | None:
+    """Return available Ollama model names, or None if Ollama isn't running."""
+    if not _OLLAMA_INSTALLED:
+        return None
+    try:
+        response = ollama.list()
+        try:
+            models = [m.model for m in response.models]
+        except (AttributeError, TypeError):
+            models = [m["name"] for m in response["models"]]
+        return models or None
+    except Exception:
+        return None
+
+
+def stream_comparison(query: str, project: dict, model_name: str):
+    """Stream a comparison between the client brief and a portfolio project."""
+    prompt = (
+        "You are a web design agency assistant. A client has submitted a brief, "
+        "and a portfolio project has been identified as a potential match based on "
+        "semantic similarity.\n\n"
+        "Compare the client brief with the portfolio project below. Explain "
+        "specifically why this project is relevant — cover overlapping themes such "
+        "as industry, target audience, features, design approach, and technical "
+        "requirements. Also note any meaningful differences.\n\n"
+        "Be concise and direct — 3 to 5 short paragraphs.\n\n"
+        f"CLIENT BRIEF:\n{query}\n\n"
+        f"PORTFOLIO PROJECT:\n"
+        f"Title: {project['title']}\n"
+        f"Sector: {project['sector']}\n"
+        f"Description: {project['description']}"
+    )
+    return ollama.chat(
+        model=model_name,
+        messages=[{"role": "user", "content": prompt}],
+        stream=True,
+    )
 
 
 # ---------------------------------------------------------------------------
@@ -182,6 +232,15 @@ def main() -> None:
     )
     embeddings = build_embeddings(texts)
 
+    # --- Ollama setup (sidebar) ---
+    ollama_models = get_ollama_models()
+    selected_model = None
+    if ollama_models:
+        with st.sidebar:
+            st.markdown("### AI Comparison")
+            st.caption("Runs on-device via Ollama")
+            selected_model = st.selectbox("Model", ollama_models)
+
     # --- Sector dropdown ---
     sectors = sorted({p["sector"] for p in projects})
     sector_options = ["All Sectors"] + sectors
@@ -196,17 +255,20 @@ def main() -> None:
     with col2:
         selected_sector = st.selectbox("Sector", sector_options)
 
-    # --- Session state for "See More" ---
+    # --- Session state for "See More" and comparisons ---
     if "num_results" not in st.session_state:
         st.session_state.num_results = 5
     if "last_query" not in st.session_state:
         st.session_state.last_query = ""
     if "last_sector" not in st.session_state:
         st.session_state.last_sector = ""
+    if "comparisons" not in st.session_state:
+        st.session_state.comparisons = {}
 
-    # Reset counter when the search inputs change
+    # Reset counter and comparisons when the search inputs change
     if query != st.session_state.last_query or selected_sector != st.session_state.last_sector:
         st.session_state.num_results = 5
+        st.session_state.comparisons = {}
         st.session_state.last_query = query
         st.session_state.last_sector = selected_sector
 
@@ -223,6 +285,26 @@ def main() -> None:
 
         for project in visible:
             st.markdown(render_card(project), unsafe_allow_html=True)
+
+            # --- AI comparison (only when Ollama is available) ---
+            if selected_model:
+                pid = project["id"]
+                if pid in st.session_state.comparisons:
+                    with st.expander("Why this match?"):
+                        st.markdown(st.session_state.comparisons[pid])
+                else:
+                    if st.button("Why this match?", key=f"compare_{pid}"):
+                        try:
+                            stream = stream_comparison(query, project, selected_model)
+                            full = ""
+                            placeholder = st.empty()
+                            for chunk in stream:
+                                full += chunk["message"]["content"]
+                                placeholder.markdown(full + "▌")
+                            placeholder.markdown(full)
+                            st.session_state.comparisons[pid] = full
+                        except Exception as e:
+                            st.error(f"Comparison failed: {e}")
 
         # "See More" button
         if st.session_state.num_results < len(results):

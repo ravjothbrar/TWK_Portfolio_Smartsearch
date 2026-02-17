@@ -17,6 +17,8 @@ The tool lets you paste any client email or brief into a search box and instantl
 
 Latency is under 500ms after the initial load — all embeddings are cached in-browser on first visit.
 
+When running locally with [Ollama](https://ollama.com), each result also gets a **"Why this match?"** button. Clicking it sends the client brief and the portfolio project description to a local AI model, which streams a plain-English comparison explaining why the project is relevant — covering overlapping themes like industry, features, design approach, and technical requirements. Everything runs on-device; no data leaves your machine.
+
 ---
 
 ## How It Was Built
@@ -108,6 +110,17 @@ streamlit run app.py
 
 The app will open at `http://localhost:8501`. The first run downloads the embedding model (~80 MB) and computes embeddings — subsequent runs are instant.
 
+### Enabling the AI comparison feature
+
+The "Why this match?" feature requires [Ollama](https://ollama.com) running locally:
+
+1. Install Ollama from [ollama.com](https://ollama.com).
+2. Pull a model (e.g. `ollama pull llama3.2` or any model you prefer).
+3. Start Ollama (`ollama serve` or just open the app — it runs in the background).
+4. Restart the Streamlit app. A model selector will appear in the sidebar.
+
+The feature is automatically hidden when Ollama isn't detected, so the cloud deployment is unaffected.
+
 ---
 
 ## Deployment (Streamlit Community Cloud)
@@ -157,3 +170,4 @@ Edit the relevant object in `TWK_final_portfolio.json` directly. The embeddings 
 | `torch`               | Backend for sentence-transformers      |
 | `numpy`               | Array operations                       |
 | `scikit-learn`        | Cosine similarity computation          |
+| `ollama`              | Local AI model client (for comparisons)|
