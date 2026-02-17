@@ -26,7 +26,7 @@ Latency is under 500ms after the initial load — all embeddings are cached in-b
 The core challenge was extracting rich, queryable text from TWK's project history. The approach:
 
 1. **Identified the best source documents** — Design Briefs and Research Reports from Google Drive, chosen for their context-rich content.
-2. **Uploaded all documents to NotebookLM** (~150 documents, well within the 300 workspace limit). The shared NotebookLM workspace is here for future updates: [NotebookLM Workspace](https://notebooklm.google.com/notebook/f7dc76b0-5f71-4c87-85aa-8502c13cfa29).
+2. **Uploaded all documents to NotebookLM** (~150 documents, well within the 300 workspace limit).
 3. **Filled gaps for older projects** — some lacked coherent documentation, so a supplementary report was compiled using web scrapers (text and visual) and AI agents to detail those projects in sufficient depth.
 4. **Generated the dataset** — 6 carefully crafted prompts to NotebookLM produced the final `.json` file containing structured data for every project.
 
@@ -131,7 +131,7 @@ When new projects are completed:
 
 ### Adding a new project
 
-1. Upload the project's **Design Brief** and **Research Report** to the [NotebookLM workspace](https://notebooklm.google.com/notebook/f7dc76b0-5f71-4c87-85aa-8502c13cfa29).
+1. Upload the project's **Design Brief** and **Research Report** to the NotebookLM workspace.
 2. Prompt NotebookLM to generate a new entry in the same JSON format (matching the `id`, `title`, `sector`, `description` structure).
 3. Add the new object to `TWK_final_portfolio.json`.
 4. Commit and push — the deployed app will automatically pick up the change.
