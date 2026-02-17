@@ -1,0 +1,704 @@
+[
+  {
+    "id": "oxford-university-colleges",
+    "title": "Oxford University Colleges",
+    "sector": "Education",
+    "description": "This project involved creating distinct digital identities for several Oxford colleges including Mansfield, Worcester, Linacre, and Somerville, balancing prestigious heritage with modern accessibility. The solution delivered unique narrative-led designs for each institution while maintaining a cohesive standard of excellence. Crucial functionality includes an interactive WebGL 3D globe for Linacre College to showcase its international community, and a bespoke window-scrolling effect for Mansfield College that mimics the experience of entering a quad. Design considerations focused on dual typography systems to balance history with modernity and accessible color palettes that refresh traditional collegiate branding."
+  },
+  {
+    "id": "lwc-drinks",
+    "title": "LWC Drinks",
+    "sector": "Corporate",
+    "description": "The UK's largest independent drinks wholesaler required a digital platform to reflect their scale and personal service model. The solution was a robust B2B platform that moved away from a dry corporate look to a vibrant, hospitality-centered aesthetic. Unique functionality includes an interactive service finder tool that guides users based on business type and size to deliver tailored product recommendations, alongside a dynamic search mechanism for their extensive product catalog. Design considerations involved using candid lifestyle photography and custom botanical illustrations to create an authentic, human-centric visual language."
+  },
+  {
+    "id": "tonbridge-school",
+    "title": "Tonbridge School",
+    "sector": "Education",
+    "description": "Tonbridge School needed to revolutionize its digital presence to reflect its status as a world-class boys' boarding school. The solution was a bespoke WordPress build that creates a compelling narrative journey for prospective parents. Crucial functionality includes a dynamic sports and calendar feed via SOCS integration and a streamlined admissions portal integration. The design emphasizes the school's extensive grounds through full-screen video backgrounds and drone photography, while the information architecture clearly separates narrative storytelling from statutory information."
+  },
+  {
+    "id": "beechwood-park-school",
+    "title": "Beechwood Park School",
+    "sector": "Education",
+    "description": "This prep school required a website that captured its distinct 'family feel' and nurturing environment. The solution provided an intuitive digital hub that serves both prospective families and the current community. Unique functionality includes a secure Parent Hub for communications and a media-rich 'Latest News' wall that aggregates school updates. Design considerations focused on playful typography and candid photography to reflect the younger pupil age group, utilizing a clear information architecture optimized for busy parents on mobile devices."
+  },
+  {
+    "id": "st-edmunds-college-cambridge",
+    "title": "St Edmund's College, Cambridge",
+    "sector": "Education",
+    "description": "St Edmund's required a website to position itself as a forward-thinking, mature college within Cambridge University. The solution balances collegiate history with the needs of modern international researchers. Crucial functionality includes a searchable Fellows & Research directory and an events management system for college dining. The design implements a clean, egalitarian layout that highlights diversity, using the college crest and colors subtly throughout the UI to ensure accessibility for an international audience."
+  },
+  {
+    "id": "newton-prep",
+    "title": "Newton Prep",
+    "sector": "Education",
+    "description": "Located in London, Newton Prep needed to highlight its exceptional facilities and transport links. The solution creates a vibrant, energetic online atmosphere that reflects the busy nature of the school. Unique functionality includes an interactive campus map and a virtual tour element to assist with remote open days. The design utilizes rapid-cut video headers and bold graphical elements inspired by the school's leaf logo to capture the joy and inclusivity of the student experience."
+  },
+  {
+    "id": "st-julians-school",
+    "title": "St Julian's School",
+    "sector": "Education",
+    "description": "This international school in Portugal needed to streamline complex curriculum information for a global audience. The solution was a modern, structured website that clarifies the bilingual offering. Crucial functionality includes a timezone-aware contact form and a Relocation Guide section to assist international families. Design considerations focused on a clean, Swiss-style typographic approach to reflect IB pedigree, combined with warm, sunny imagery that sells the coastal lifestyle and location."
+  },
+  {
+    "id": "occ-strategy-consultants",
+    "title": "OC&C Strategy Consultants",
+    "sector": "Corporate",
+    "description": "A global consultancy requiring a platform to showcase expertise and recruit high-volume talent. The solution was a conversion-focused site built on a modular system for scalability. Unique functionality includes a sophisticated Knowledge Hub with filtering for insights and reports tagged by industry, and a multi-step contact form with CRM integration. The design employs bold typography, strong color use, and clean data visualization to present complex information with authority and clarity."
+  },
+  {
+    "id": "merchant-taylors-school",
+    "title": "Merchant Taylors' School",
+    "sector": "Education",
+    "description": "A prestigious boys' school requiring a digital presence that balances tradition with a forward-thinking ethos. The solution features two bespoke websites for Prep and Senior schools that share a design ethos. Crucial functionality includes a password-protected alumni area and a historical timeline feature to showcase the school's archives. The design is masculine and bold, utilizing black and gold branding to create a premium feel, supported by 'day in the life' video sequences."
+  },
+  {
+    "id": "rumsey-hall-school",
+    "title": "Rumsey Hall School",
+    "sector": "Education",
+    "description": "A US-based junior boarding school needing to appeal to both domestic and international families. The solution pivots towards the American market's preference for clear value propositions. Unique functionality includes a Boarding Life interactive module and timezone converters. The design features bold statistical 'Quick Facts' infographics prominently on the homepage and utilizes parallax scrolling to create an engaging, active user experience that reflects the school's energy."
+  },
+  {
+    "id": "climate-kic",
+    "title": "Climate KIC",
+    "sector": "Corporate",
+    "description": "Europe's leading climate innovation agency required a platform to showcase impact and funding. The solution emphasizes transparency and sustainability. Crucial functionality includes a project database with impact metrics and funding trackers. Design considerations focused on a low-carbon design approach (sustainable web design), optimizing assets for fast loading and low energy consumption, utilizing a clean, minimalist aesthetic with nature-inspired UI elements."
+  },
+  {
+    "id": "erskine-stewart-melville-school",
+    "title": "Erskine Stewart Melville School",
+    "sector": "Education",
+    "description": "A unique school group with a 'diamond structure' requiring a unified yet distinct digital presence. The solution allows users to navigate three distinct schools from a single hub. Unique functionality includes a toggle system to switch between Boys, Girls, and Junior schools while maintaining brand cohesion. The design uses specific colour-coding to differentiate the schools while sharing a common layout architecture to reduce development overhead and ensure consistency."
+  },
+  {
+    "id": "hyde-new-homes",
+    "title": "Hyde New Homes",
+    "sector": "Property",
+    "description": "An award-winning provider of new homes requiring a sales-focused digital platform. The solution challenges affordable housing assumptions with high-end aesthetics. Crucial functionality includes a personalized login area where buyers can save properties and track Shared Ownership applications, alongside API integration with Salesforce for live property availability. The design is visual-first and luxurious, optimizing the browsing experience for mobile users."
+  },
+  {
+    "id": "finbourne",
+    "title": "Finbourne",
+    "sector": "Finance",
+    "description": "A fintech firm needing to communicate complex data management capabilities to C-suite decision-makers. The solution is a high-performance site that builds trust through technical clarity. Unique functionality includes a bespoke 3D animation built using WebGL to visualize data flow and connectivity, along with secure client portals. The design employs a dark mode aesthetic common in developer tools, using abstract high-tech visualizations to distinguish the brand from traditional banking."
+  },
+  {
+    "id": "amali-island",
+    "title": "Amali Island",
+    "sector": "Property",
+    "description": "An ultra-luxury development project requiring a digital experience to match its exclusivity. The solution is a highly immersive campaign site that acts as a digital brochure. Crucial functionality includes WebGL water ripple effects on scroll and seamless transitions between 3D renders and photography. The design features a mix of horizontal and vertical scrolling to navigate the user through a captivating journey of the island lifestyle."
+  },
+  {
+    "id": "ardingly-college",
+    "title": "Ardingly College",
+    "sector": "Education",
+    "description": "A 'World Ready' school requiring a website to showcase its extensive co-curricular offering. The solution emphasizes the breadth of opportunity available to students. Unique functionality includes a dynamic Social Wall aggregating content from social platforms and a 'Find Your Passion' course selector. The design uses full-width imagery of dorms and social spaces to reassure parents about the boarding aspect, supported by a modern hamburger menu navigation."
+  },
+  {
+    "id": "marlborough-college-malaysia",
+    "title": "Marlborough College Malaysia",
+    "sector": "Education",
+    "description": "A British boarding school in Malaysia needing to bridge its UK heritage with its tropical location. The solution highlights the scale of the campus and the warmth of the community. Crucial functionality includes an interactive campus map highlighting the 90-acre site. Design considerations involved blending traditional British heraldry with tropical visual cues like lush greenery and bright light to create a unique 'East meets West' identity."
+  },
+  {
+    "id": "react-marketing",
+    "title": "re:act marketing",
+    "sector": "Media",
+    "description": "A fast-growing digital agency requiring a high-energy site to demonstrate creativity and agility. The solution is a dynamic portfolio site that screams professional fun. Unique functionality includes a fast-loading video showreel on the homepage and a filterable portfolio grid. The design uses bold, neon colours and kinetic typography that animates on scroll to demonstrate reactivity, aligning perfectly with their brand name."
+  },
+  {
+    "id": "city-of-london-school",
+    "title": "City of London School",
+    "sector": "Education",
+    "description": "Located in the heart of London, this school needed a site to reflect its cosmopolitan and forward-thinking nature. The solution is a fresh, vibrant site that serves regulatory requirements while attracting diverse talent. Crucial functionality includes a Commute Calculator/transport map and seamless migration to WordPress. The design uses a sophisticated, corporate-adjacent aesthetic with sharp lines and architectural photography to reflect its location in the Square Mile."
+  },
+  {
+    "id": "brentwood-school",
+    "title": "Brentwood School",
+    "sector": "Education",
+    "description": "A large 'diamond model' school requiring a site to manage complex structures and showcase vast opportunities. The solution features a high-energy homepage that acts as a gateway to distinct stories. Unique functionality includes a mega-menu navigation to handle the Pre-Prep to Sixth Form structure and detailed sports results integration. The design focuses on 'Opportunity' through a tile-based discovery interface and vibrant colors."
+  },
+  {
+    "id": "acs-international-schools",
+    "title": "ACS International Schools",
+    "sector": "Education",
+    "description": "A group of four international schools requiring a digital presence that breaks traditional moulds to reflect their 'refreshingly different' ethos. The solution creates a cutting-edge narrative structure to explain their International Baccalaureate and AP offerings. Crucial functionality includes a multi-directional scroll and 'exploding 3D shapes' to navigate between the four campus locations. The design is bold and innovative, positioning the schools as forward-thinking through a distinct departure from standard educational website aesthetics."
+  },
+  {
+    "id": "farm-africa",
+    "title": "Farm Africa",
+    "sector": "Not-for-Profit",
+    "description": "Leading charity working with farmers in eastern Africa needed to increase online donation conversion rates and share technical impact data. The solution is an emotional and inspiring platform focused on fundraising. Crucial functionality includes a seamless, multi-currency donation engine, abandoned cart functionality, and an 'Impact Map' showing project locations. Design considerations focused on using vibrant, dignity-focused photography rather than 'pity' imagery, with clear sticky calls-to-action on mobile devices to maximise giving."
+  },
+  {
+    "id": "elstree-school",
+    "title": "Elstree School",
+    "sector": "Education",
+    "description": "A prep school needing to communicate its unique 'Country Childhood' proposition. The solution involved a visual identity evolution and a website that captures the nurturing rural environment. Crucial functionality includes a masonry layout photo gallery to showcase outdoor learning activities. The design utilizes earthy tones and hand-drawn icon styles to reflect the school's setting, distinguishing it from academic hothouses with modern animation and scrolling effects."
+  },
+  {
+    "id": "cumnor-house-school",
+    "title": "Cumnor House School",
+    "sector": "Education",
+    "description": "This school required a website to reflect its motto 'Aim High, Be Kind' and its warm community atmosphere. The solution centres on soft, rounded design elements and warm photography. Crucial functionality includes a dedicated 'Admissions Journey' timeline to guide parents and a secure Parent Portal login. The design uses custom illustrations to convey the supportive environment and simplify the user journey for prospective families."
+  },
+  {
+    "id": "habs",
+    "title": "Habs",
+    "sector": "Education",
+    "description": "Haberdashers' Elstree Schools needed to communicate the close alignment of their Boys' and Girls' schools under a new strategic vision. The solution features a unified digital presence that respects individual identities. Crucial functionality includes a split landing page that directs users to either school while maintaining a shared brand bar and scroll-through animations. The design uses a strong, modern colour palette of deep navy and magenta to unite the schools visually."
+  },
+  {
+    "id": "hereford-cathedral-school",
+    "title": "Hereford Cathedral School",
+    "sector": "Education",
+    "description": "A school with a strong musical heritage needing to modernise its image while respecting its cathedral ties. The solution blends heritage cues with modern digital trends. Crucial functionality includes an embedded audio player to showcase the cathedral choir and an interactive map showing the full site including boarding houses. The design integrates serif fonts and gold/classic blue branding with modern parallax scrolling to reveal the school's history alongside its facilities."
+  },
+  {
+    "id": "worcester-college-oxford",
+    "title": "Worcester College, Oxford",
+    "sector": "Education",
+    "description": "Famous for its extensive gardens, the college needed to highlight its unique sense of place and balance history with modernity. The solution serves the entire student lifecycle from prospect to alumni. Crucial functionality includes a conference booking system for the vacation period and flexible people modules to filter fellows by research area. Design considerations include a dual typography system mixing serif and sans-serif fonts and a colour palette balancing traditional greens with contemporary pinks."
+  },
+  {
+    "id": "lamar-development",
+    "title": "Lamar Development",
+    "sector": "Property",
+    "description": "A luxury property developer requiring a digital showcase for design-led projects. The solution is a minimalist, gallery-style site that allows architectural quality to take centre stage. Crucial functionality includes a portfolio showcase with high-resolution lightboxes and smooth AJAX page transitions for a premium app-like feel. The design is stripped back and sophisticated, focusing on high-quality renders and seamless navigation."
+  },
+  {
+    "id": "sea-mirror",
+    "title": "Sea Mirror",
+    "sector": "Property",
+    "description": "An ultra-luxury development of unique waterfront homes in Dubai targeting UHNWIs. The solution uses mystery and exclusivity to drive interest. Crucial functionality includes a bespoke password-protected members' area that tantalisingly reveals the proposition to vetted leads, integrated with a CRM. The design is high-end and atmospheric, using deep blacks and metallic accents to evoke privacy and prestige."
+  },
+  {
+    "id": "mansfield-college-oxford",
+    "title": "Mansfield College, Oxford",
+    "sector": "Education",
+    "description": "A college with a strong mission to 'include the excluded', needing a site to reflect its welcoming and egalitarian nature. The solution puts people and stories at the centre. Crucial functionality includes an immersive homepage with a window-scrolling effect mimicking entry into a quad and blog integration for student voices. The design uses brighter colours and approachable photography to appear less intimidating than traditional Oxford colleges."
+  },
+  {
+    "id": "cross-ocean-partners",
+    "title": "Cross Ocean Partners",
+    "sector": "Finance",
+    "description": "A global alternative asset manager specialising in credit. The solution needed to communicate stability, trust, and expertise. Crucial functionality includes a secure Limited Partner (LP) login portal and regulatory disclosure pop-ups. The design is corporate and restrained, using subtle micro-interactions and bespoke animations to make the text-heavy content engaging while maintaining a professional financial aesthetic."
+  },
+  {
+    "id": "sevenoaks-school",
+    "title": "Sevenoaks School",
+    "sector": "Education",
+    "description": "A world-leading IB school requiring a digital presence comparable to a university. The solution highlights their academic stature and global outlook. Crucial functionality includes a 'Curriculum Explorer' to explain the IB versus A-Levels, a Social Hub, and complex calendar integration. The design is international and collegiate, utilizing a library of flexible content strips that allow editors to build unique and engaging pages."
+  },
+  {
+    "id": "cheam-school",
+    "title": "Cheam School",
+    "sector": "Education",
+    "description": "A leading prep school needing to balance a perception of tradition with their innovative reality. The solution focuses on storytelling around the boarding experience. Crucial functionality includes a secure photo area for current parents and long-form scroll pages describing a 'Day in the Life' of a boarder. The design uses judicious white space and classic layouts with elegant modern touches."
+  },
+  {
+    "id": "radley-college",
+    "title": "Radley College",
+    "sector": "Education",
+    "description": "A traditional all-boys boarding school wanting to show they are forward-thinking. The solution serves as a 'north star' for their marketing. Crucial functionality includes a robust video wall header, a searchable Warden's Blog, and a live stream ticker for events. The design balances traditional aesthetic cues like crests and serif fonts with modern, dynamic layouts."
+  },
+  {
+    "id": "hallfield-school",
+    "title": "Hallfield School",
+    "sector": "Education",
+    "description": "A Birmingham-based prep school wanting to convey excitement and a progressive approach. The solution is energetic and playful. Crucial functionality includes a transport mapping tool to visualize catchment areas. The design uses bold, primary colours and playful shapes to reflect the energy of younger pupils, with clear, chunky navigation buttons optimised for parents on mobile devices."
+  },
+  {
+    "id": "tophat",
+    "title": "TopHat",
+    "sector": "Corporate",
+    "description": "A modular housing manufacturer needing to shift perception from startup to proven industry scale-up. The solution showcases proprietary technology and design flexibility. Crucial functionality includes an Interactive Configurator with live visual feedback allowing users to customise home designs, and a factory tour video. The design is industrial yet polished, using isometric illustrations to explain the construction process."
+  },
+  {
+    "id": "ciesco",
+    "title": "Ciesco",
+    "sector": "Corporate",
+    "description": "A boutique M&A advisory firm needing to demonstrate market leadership in technology and media. The solution is sleek and professional. Crucial functionality includes a 'Deal Tracker' or 'Tombstone' gallery showcasing recent transactions. The design is data-driven, utilizing animated charts and graphs to visualize market trends and track records."
+  },
+  {
+    "id": "cranleigh-school",
+    "title": "Cranleigh School",
+    "sector": "Education",
+    "description": "A family of schools requiring a cohesive digital presence that highlights their 'Whole Person' ethos. The solution involves three separate websites sharing a design philosophy. Crucial functionality includes an interactive map connecting the Prep and Senior schools and integration of pupil-led content like blogs. The design gives equal weight to Arts, Sports, and Academics."
+  },
+  {
+    "id": "radiocentre",
+    "title": "Radiocentre",
+    "sector": "Media",
+    "description": "The industry body for commercial radio needing to change perceptions of the medium. The solution positions radio as a modern digital force. Crucial functionality includes a 'Sound Generator' or ad archive and a 'Station Finder' map. The design visualizes sound waves and uses vibrant, energetic colours to reflect the audio medium's dynamism."
+  },
+  {
+    "id": "kensington-park-school",
+    "title": "Kensington Park School",
+    "sector": "Education",
+    "description": "A central London day and boarding school leveraging the city as a resource. The solution infuses the brand with vibrancy and urban energy. Crucial functionality includes Google Maps integration to show proximity to museums and galleries ('London as a Classroom'). The design is modern and corporate-adjacent, reflecting the school's location and forward-thinking spirit."
+  },
+  {
+    "id": "hmc",
+    "title": "HMC",
+    "sector": "Education",
+    "description": "HMC (The Heads' Conference) required a digital transformation to shift its perception from an 'old boys club' to a progressive, modern membership organisation representing the heads of the world's leading independent schools. The solution was a vibrant, content-rich platform that acts as a kitemark for excellence in education. Crucial functionality includes a secure private member area with exclusive content ranging from policy recommendations to meeting minutes, alongside a searchable member directory and a job board for senior leadership roles. Design considerations focused on a professional, text-heavy aesthetic that prioritises readability and resource accessibility for busy education leaders, moving away from stuffy traditions to a modern, open visual identity."
+  },
+  {
+    "id": "british-school-of-bucharest",
+    "title": "British School of Bucharest",
+    "sector": "Education",
+    "description": "This top-tier international school needed a website that balanced its reputation as the 'Harvard of schools in Romania' with a need for innovation. The solution was a premium digital presence that conveys a sense of 'Royally British' heritage within a Romanian context. Crucial functionality includes a Virtual Open Day registration system and direct integration with iSAMS for calendar management. The design utilises a 'luxury brand' aesthetic, employing deep blues, reds, and gold to evoke grandeur and trust, avoiding kitsch while subtly integrating Union Jack colours alongside imagery of the local campus environment."
+  },
+  {
+    "id": "liberty-global",
+    "title": "Liberty Global",
+    "sector": "Corporate",
+    "description": "The world's largest TV and broadband company required a corporate website overhaul to humanise their technology-led brand. The solution transformed their digital presence into a 'shop window' worthy of a leading tech company, highlighting the freedom technology brings. Crucial functionality includes a real-time Stock Price ticker API, an investor relations document library, and advanced social media aggregation. Design considerations focused on a 'Big Corp' polished aesthetic, utilizing high-definition video backgrounds to connect various global sub-brands like Virgin Media into a cohesive, empowering narrative."
+  },
+  {
+    "id": "elton-john-aids-foundation",
+    "title": "Elton John AIDS Foundation",
+    "sector": "Not-for-Profit",
+    "description": "One of the leading independent AIDS organisations required a website to reflect their new global vision to end the epidemic by 2030. The solution was an emotional and inspiring platform focused on impact and fundraising. Crucial functionality includes a custom-built interactive WebGL globe to showcase impact projects around the world, a high-capacity donation gateway, and an Evidence/Insights Repository with advanced filtering. The design is bold and accessible, utilizing the iconic 'Star' branding and high-contrast colours, featuring dynamic counters showing lives saved and funds raised."
+  },
+  {
+    "id": "oakham-school",
+    "title": "Oakham School",
+    "sector": "Education",
+    "description": "A large co-educational boarding school needing to convey its complex, all-rounded offering without overwhelming users. The solution was a confident, energetic site that captures the school's 'grounded' nature. Crucial functionality includes a 'House System' explorer allowing users to visit bespoke pages for each boarding house, and automated school calendar feeds. The design employs a 'megamenu' structure to handle the vast array of co-curricular options and uses the school's 'Oak' leaf motif in UI elements to reinforce the brand identity."
+  },
+  {
+    "id": "bilton-grange",
+    "title": "Bilton Grange",
+    "sector": "Education",
+    "description": "Now merged with Rugby School, this prep school needed to capture the sense of adventure inherent in its 90-acre countryside setting. The solution was a digital experience that emphasizes the 'wild' aspects of the school's ethos. Crucial functionality includes a Design & Technology showcase. Design considerations focused on the visual beauty of the Pugin architecture and woodland grounds, using organic shapes and forest greens in the colour palette to distinguish the school from urban competitors and reflect its 'wild child' philosophy."
+  },
+  {
+    "id": "hampton-school",
+    "title": "Hampton School",
+    "sector": "Education",
+    "description": "A leading academic boys' school requiring a site to reflect its 'seriously excellent, seriously fun' ethos. The solution was a clean, structured website that balances academic rigour with vibrant student life. Crucial functionality includes a 'Match Report' database for their extensive sports program and integrated digital magazines. The design features a scrolling homepage experience leading with an intriguing video mask and bold, eye-catching headings that break up content to prevent it from looking blocky or text-heavy."
+  },
+  {
+    "id": "dax-digital-ad-exchange",
+    "title": "DAX (Digital Ad Exchange)",
+    "sector": "Corporate",
+    "description": "Part of Global Media, DAX needed a B2B sales tool to market its digital audio advertising capabilities. The solution was a highly visual, tech-focused site communicating 'Everything Audio, Everywhere'. Crucial functionality includes a three-dimensional rotating carousel for video content and interactive Audience Insights graphs. The design is explicitly tech-forward, using dark themes, neon data lines, and 3D elements to represent the 'digital' and 'exchange' nature of the product, distinguishing it from traditional media sites."
+  },
+  {
+    "id": "william-reed",
+    "title": "William Reed",
+    "sector": "Media",
+    "description": "A 150-year-old B2B media owner needing to shift perception from 'old-fashioned print' to 'progressive digital'. The solution serves as a corporate portfolio for brands like The Grocer. Crucial functionality includes a 'Brand Filter' to sort their vast portfolio by sector and a careers integration for recruitment. The design is corporate and grid-based to provide clarity and hierarchy to a complex business structure, using slick digital aesthetics to appeal to new recruits with digital backgrounds."
+  },
+  {
+    "id": "mainstream-renewable-power",
+    "title": "Mainstream Renewable Power",
+    "sector": "Corporate",
+    "description": "A global pure-play renewable energy company preparing for an IPO. The solution was an impactful, SEO-optimised site that positions them as market makers. Crucial functionality includes a 'Global Presence' interactive map showing wind and solar assets and a share price monitor API. Design considerations involved moving away from boring corporate blues to use distinctive orange and pink brand accents, combining aerial photography of renewable sites with clean, fresh colours to convey sustainability and innovation."
+  },
+  {
+    "id": "the-study-prep",
+    "title": "The Study Prep",
+    "sector": "Education",
+    "description": "A purpose-built prep school in Wimbledon needing to convey its creative, nurturing ethos. The solution creates a welcoming community feel that highlights the idyllic location. Crucial functionality includes a secure 'Parents Area' and dynamic social media integration. The design features a unique homepage scroll sequence where an illustration of the school building moves up as narrative text fades away, revealing a looping video, alongside soft graphical overlays and purple branding to appeal to the prep demographic."
+  },
+  {
+    "id": "dig",
+    "title": "Dig",
+    "sector": "Corporate",
+    "description": "A start-up aiming to simplify garden creation required a full brand and e-commerce presence. The solution involved consulting on strategy and building a site that makes gardening accessible. Crucial functionality includes full e-commerce capabilities for purchasing plants and garden designs. Design considerations included unconventional horizontal scrolling navigation and a bespoke library of specialist plant illustrations, establishing a 'challenger brand' status with a tactile, organic aesthetic."
+  },
+  {
+    "id": "headington-school",
+    "title": "Headington School",
+    "sector": "Education",
+    "description": "A leading girls' school in Oxford with a complex structure (Nursery to Sixth Form) requiring a unified digital presence. The solution is a dynamic site based on the 'Future Ready' philosophy. Crucial functionality includes a 'Subject Selector' for Sixth Form options and an admissions calculator. The design is empowering and modern, featuring 'Girls in STEM' and 'Girls in Sport' imagery with a fashion-editorial layout style that differentiates it from traditional boarding schools."
+  },
+  {
+    "id": "talking-talent",
+    "title": "Talking Talent",
+    "sector": "Corporate",
+    "description": "A coaching consultancy focusing on DE&I and parental transitions. The solution was a lead-generation focused site aligning with new brand positioning. Crucial functionality includes a 'Cost of Inaction' calculator tool to generate leads and a gated resource section. The design is people-centric, using warm photography and testimonials to build trust, with specific landing pages tailored to Tier 1 and Tier 2 industry segments."
+  },
+  {
+    "id": "synergy",
+    "title": "Synergy",
+    "sector": "Corporate",
+    "description": "Global leaders in managed IT and infrastructure solutions formed from a merger. The site needed to convey trust and global reach to non-technical buyers. Crucial functionality includes filterable case studies and a large interactive globe conveying geographic reach (London, NY, Hong Kong). The design is premium and 'white-glove', using architectural precision, crisp visuals, and slick animation to reflect expertise without relying on generic stock imagery."
+  },
+  {
+    "id": "caldicott-school",
+    "title": "Caldicott School",
+    "sector": "Education",
+    "description": "A boys' prep school needing to showcase high academic standards without being seen as an 'exam factory'. The solution is an action-oriented site reflecting the 'boys being boys' ethos. Crucial functionality includes iSAMS admissions integration and a Sports Team integration. The design focuses on 'action' photography—boys playing rugby, climbing trees—combined with parallax scrolling effects and a visual identity evolution introducing new typefaces and extended colours."
+  },
+  {
+    "id": "wellington-college",
+    "title": "Wellington College",
+    "sector": "Education",
+    "description": "A world-renowned school seeking to be a pioneer in education. The project involved a full brand narrative re-write and a website that pushes boundaries. Crucial functionality includes a 'Wellington Identity' interactive explorer and an interactive school tour. The design uses a unique grid layout that breaks standard education tropes, employing bold hero-style imagery and energetic visuals to communicate 'Leadership' and 'Service'."
+  },
+  {
+    "id": "silcoates",
+    "title": "Silcoates",
+    "sector": "Education",
+    "description": "A northern independent school wanting to be 'bold, brave, and noisy'. The solution centers on the concept 'Find your Silcoates Self'. Crucial functionality includes a horizontal scrolling homepage that takes visitors on an intriguing journey and a simple enquiry form wizard. The design features 'full bleed' video as a central point, a centralised crest, and 'scroller' animations, focusing on down-to-earth values and avoiding pretension."
+  },
+  {
+    "id": "epsom-college",
+    "title": "Epsom College",
+    "sector": "Education",
+    "description": "A prestigious school needing to communicate core qualities of 'Time and Space' and 'Benevolence'. The solution is a clean, modern website that avoids being text-heavy. Crucial functionality includes an integrated school calendar and a bespoke parent portal design. The design uses striking architecture as a backdrop overlaid with vibrant student life photography, utilizing negative space to visually convey the 'space to breathe' ethos."
+  },
+  {
+    "id": "unilever-ventures",
+    "title": "Unilever Ventures",
+    "sector": "Finance",
+    "description": "The venture capital arm of Unilever required a site to reflect its modern, innovative portfolio. The solution focuses on showcasing portfolio companies. Crucial functionality includes a 'Portfolio Filter' by sector (Beauty, Wellness, Tech) and a secure client portal. The design is clean, cosmetic, and high-end, utilizing white space and high-quality product photography to reflect the consumer brands they invest in, along with an evolved visual identity."
+  },
+  {
+    "id": "st-johns-leatherhead",
+    "title": "St John's Leatherhead",
+    "sector": "Education",
+    "description": "A co-educational independent day and boarding school needing to reflect its 'day school with a boarding school heart' ethos and 7 pillars of kindness. The solution was a modern, bold website capturing the school's vibrant energy and flexible boarding model. Crucial functionality includes automated SOCS Sports Fixtures & Results integration via XML feed and customisable forms integrated with iSAMS for admissions. The design utilizes a magazine-style layout for news stories to encourage casual browsing and incorporates flippable PDFs via ISSUU embeds to showcase publications."
+  },
+  {
+    "id": "ucs",
+    "title": "UCS",
+    "sector": "Education",
+    "description": "An independent day school in Hampstead needing to balance its distinct liberal ethos with academic excellence across three school branches. The solution was a slick, professional website with dedicated landing pages for Pre-Prep, Junior, and Senior schools to guide specific audiences. Crucial functionality includes a seamless admissions process experience and a dedicated Alumni portal. The design features a sophisticated academic look using black and white photography contrasted with the school's distinct frog-green branding to create a unique, intellectual aesthetic."
+  },
+  {
+    "id": "rose-bruford-college",
+    "title": "Rose Bruford College",
+    "sector": "Education",
+    "description": "An independent creative arts institution requiring a digital presence to position them as progressive leaders ('Change Makers') in theatre and performance. The solution was a bold new brand and website that manifests the college's spirit of challenging the status quo. Crucial functionality includes a dynamic course search and a student showcase section for graduating talent. The design employs a dark mode aesthetic reminiscent of a theatre space, utilizing spotlight effects, video backgrounds, and kinetic animations to create a slick, showy experience."
+  },
+  {
+    "id": "indeed-flex",
+    "title": "Indeed Flex",
+    "sector": "Recruitment",
+    "description": "Backed by the world's #1 job site, this temporary staffing platform needed a high-impact website to reflect its dynamic, tech-first nature. The solution focused on the jobseeker experience, guiding users to relevant roles seamlessly. Crucial functionality includes a job search widget that automatically pulls job listings from existing systems via API integration to keep content live. The design adopts a tech-first aesthetic with app-style UI elements like rounded cards, ensuring a seamless visual transition between the marketing site and the mobile app."
+  },
+  {
+    "id": "uk-in-a-changing-europe",
+    "title": "UK in a Changing Europe",
+    "sector": "Not-for-Profit",
+    "description": "An authoritative think-tank on UK-EU relations requiring a platform to host high-quality, impartial editorial content. The solution was a vibrant, user-friendly hub that manages a vast quantity of output. Crucial functionality includes a massive research archive with advanced filtering by author, date, and topic, alongside integration for events, video, and audio content. The design follows a 'News Site' style, prioritizing text readability and rapid content updates similar to major broadcasters."
+  },
+  {
+    "id": "somerville-college-oxford",
+    "title": "Somerville College, Oxford",
+    "sector": "Education",
+    "description": "This Oxford college needed a bold platform to articulate its progressive, non-conformist ethos. The solution was a dynamic website that heroes student voices and academic research. Crucial functionality includes a crowdfunding module for college projects, a historical directory of pre-eminent Somervillians, and live social media walls (Instagram/Twitter integration). The design introduces brighter secondary colours to create a livelier, youthful aesthetic, using full-width imagery and student testimonials to convey a warm, inclusive community atmosphere."
+  },
+  {
+    "id": "bloxham-school",
+    "title": "Bloxham School",
+    "sector": "Education",
+    "description": "A co-educational boarding school requiring a site to highlight its holistic focus and strong community spirit. The solution was a confident, authentic platform that centers on student storytelling. Crucial functionality includes a brochure request data capture form and quick access to key information for parents. The design portrays the energy of current students through vibrant colour and imagery, utilizing soft transitions and a welcoming aesthetic to reflect the distinct 'village' feel of the campus environment."
+  },
+  {
+    "id": "pennthorpe-school",
+    "title": "Pennthorpe School",
+    "sector": "Education",
+    "description": "An independent prep school where pupil happiness takes precedence, requiring a site to break away from the 'just another school' mould. The solution involved a bold brand evolution featuring a library of bespoke single-line illustrations. Crucial functionality includes a weekly bulletin integration and a user-friendly admissions journey. The design is playful and child-centric, utilizing fluid animations of the bespoke illustrations to create an unexpected and engaging browsing experience that reflects the school's creative energy."
+  },
+  {
+    "id": "national-centre-for-universities-and-business",
+    "title": "National Centre for Universities and Business",
+    "sector": "Not-for-Profit",
+    "description": "A membership organisation promoting university-business collaboration needed to move from a blog-style site to a corporate showcase. The solution uses slick animation to bring a new brand to life while managing complex content resources. Crucial functionality includes a bespoke taxonomy system that dynamically pulls categorised Insights into relevant pages and a secure Member Zone for exclusive content. The design features 'connecting line' motifs to visualize the link between higher education and industry."
+  },
+  {
+    "id": "pmb-capital",
+    "title": "PMB Capital",
+    "sector": "Finance",
+    "description": "A merchant banking firm dedicated to advising business owners, requiring a digital presence that establishes trust and reliability. The solution was a professional, modern one-page website that delivers key information concisely. Crucial functionality includes a secure client portal for sensitive documentation and a custom loading effect. The design is understated and exclusive, utilizing slick in-browser animations and a muted colour palette to convey stability, discretion, and a high-end corporate identity."
+  },
+  {
+    "id": "wavemaker",
+    "title": "Wavemaker",
+    "sector": "Media",
+    "description": "A global media agency requiring a website to reflect their new 'Positive Provocation' identity. The solution was the digital expression of their name, creating a site that is surprising and fun. Unique functionality includes a complex homepage animation sequence ('ripple' effects) that communicates key messages through motion. Design considerations focused on high-performance motion graphics that function smoothly across devices, using bold typography and dynamic layouts to position them as a forward-thinking creative leader."
+  },
+  {
+    "id": "the-diocese-of-southwark",
+    "title": "The Diocese of Southwark",
+    "sector": "Not-for-Profit",
+    "description": "A large church organisation needing to convey the excitement of community while serving a wide range of visitors. The solution was a modern, approachable digital experience. Crucial functionality includes an interactive 'Find a Church' map, a searchable clergy directory, and API integrations to automatically pull content from existing internal systems. The design focuses on community and service, using diverse photography and accessible fonts to ensure the site is welcoming to all demographics."
+  },
+  {
+    "id": "atr-aircraft",
+    "title": "ATR Aircraft",
+    "sector": "Corporate",
+    "description": "The world's leading regional aircraft manufacturer required a site to reflect their expertise and the value they deliver to remote communities. The solution uses engaging design and captivating imagery to highlight their core message of connection. Crucial functionality includes cutting-edge interactivity, such as a plane configurator or range map, to demonstrate product capabilities. The design is aerospace-themed with wide panoramic layouts and clean data tables to showcase the human element of their global reach."
+  },
+  {
+    "id": "safetykleen",
+    "title": "Safetykleen",
+    "sector": "Corporate",
+    "description": "The world's leading provider of parts cleaning services needed to showcase their unique 'full service' model. The solution was an ultra-fast website designed and populated with SEO performance in mind. Crucial functionality includes a postcode-based 'Service Finder' to locate local branches and a bespoke animated explainer video. The design adopts an industrial and functional aesthetic, utilising strong yellow and black branding to create a high-visibility, safety-conscious look."
+  },
+  {
+    "id": "argon-and-co",
+    "title": "Argon & Co",
+    "sector": "Corporate",
+    "description": "A global management consultancy requiring a unified web presence to support their transformation operations. The solution was a site fully translated into English and French that adapts to the user. Crucial functionality includes geo-location technology to automatically serve region-specific content and services to the visitor, alongside a global office selector. The design is sleek and professional, organizing a broad service offering into a clear structure that maintains a consistent global brand."
+  },
+  {
+    "id": "crista-galli-ventures",
+    "title": "Crista Galli Ventures",
+    "sector": "Finance",
+    "description": "A health-tech venture capital fund led by a consultant radiologist, needing a brand that felt distinct from typical finance sites. The solution brought a bright, optimistic brand to life online. Crucial functionality includes cutting-edge in-browser WebGL animations and a portfolio grid with interactive hover states revealing founder details. The design blends a 'medical' clinical white aesthetic with modern 'tech' abstract shapes and pastel colours, creating an approachable yet professional visual identity."
+  },
+  {
+    "id": "oundle-school",
+    "title": "Oundle School",
+    "sector": "Education",
+    "description": "One of the UK's largest boarding schools requiring a site to portray its unique town-integrated campus. The solution was a flexible, modular system allowing editors to create innumerable distinct layouts. Crucial functionality includes an interactive illustrated map that conveys the benefits of the school's integration with the market town, and a sporting fixtures calendar. The design emphasizes scale and opportunity, using wide-angle photography and sophisticated typography to reflect the themes of belonging, place, and autonomy."
+  },
+  {
+    "id": "eton-college",
+    "title": "Eton College",
+    "sector": "Education",
+    "description": "A historic educational institution needing to showcase its modern innovation alongside its heritage. The solution was a dynamic website that champions the school's extensive public benefit work and partnerships. Crucial functionality includes a searchable collections database for the college's natural history museum and art archives. The design strikes a delicate balance between 'world-leading' modernity and centuries of tradition, using a refined serif typeface and minimalist layout."
+  },
+  {
+    "id": "working-voices",
+    "title": "Working Voices",
+    "sector": "Corporate",
+    "description": "A provider of communication training for global institutions, needing to position themselves as sector leaders. The solution showcases fascinating insights alongside training services. Crucial functionality includes a comprehensive course booking system and an insights hub. The design is human-focused and professional, featuring 'meet the trainer' profiles and video testimonials to sell the personal nature of their coaching, ensuring the site looks polished and innovative."
+  },
+  {
+    "id": "scb-group",
+    "title": "SCB Group",
+    "sector": "Finance",
+    "description": "The world's leading low-carbon commodity company required a site to reflect their relentless pursuit of a sustainable future. The solution was a bold, dynamic website that visualizes intangible environmental data. Crucial functionality includes live market data widgets and a 'hijacked scroll' video element that translates carbon impact statistics into relatable real-world terms. The design combines financial grid aesthetics with sustainability cues, creating a unique visual identity."
+  },
+  {
+    "id": "swanbourne-house-school",
+    "title": "Swanbourne House School",
+    "sector": "Education",
+    "description": "This independent co-ed boarding and day school needed to shift its positioning towards progressive academics and outdoor learning. The solution was a bold, energetic rebrand that captures the adventurous spirit of the school, moving away from traditional tropes. Crucial functionality includes a Virtual Tour integration that allows prospective parents to explore the facilities remotely. The design is young and vibrant, utilizing action-oriented photography of children climbing and exploring to emphasize the 'Country Childhood' ethos, supported by fluid animations and scrolling effects."
+  },
+  {
+    "id": "the-sutton-trust",
+    "title": "The Sutton Trust",
+    "sector": "Not-for-Profit",
+    "description": "A leading social mobility charity requiring a platform to present programmes, research, and policy influence to diverse audiences. The solution unified their main presence with microsites for US and Summer School programmes into a coherent whole. Crucial functionality includes a comprehensive Research Library with filtering and Programme Application forms to streamline access. The design is impactful and statistic-driven, highlighting 'Success Stories' and key impact data prominently to prove efficacy to donors and government stakeholders."
+  },
+  {
+    "id": "banwa-private-island",
+    "title": "Banwa Private Island",
+    "sector": "Property",
+    "description": "An ultra-luxury private island retreat requiring a digital brochure to match its exclusivity and price point. The solution immerses visitors in the unique wildlife and natural environment of the location. Crucial functionality includes full-screen, 4K video loops of marine life and villas that serve as a digital brochure, with a direct line concierge booking system rather than standard e-commerce. The design is visual-first and minimalist, prioritizing high-resolution imagery to convey the hyper-exclusive nature of the resort."
+  },
+  {
+    "id": "st-helens",
+    "title": "St Helen's",
+    "sector": "Education",
+    "description": "An independent day school for girls needing to showcase its breadth of opportunity and 'everyday moments of magic'. The solution was a concept built around 'Moments & Highlights' to capture the school's spirit. Crucial functionality includes a Curriculum Explorer tool that allows users to navigate academic offerings intuitively. The design leverages a vibrant, energetic colour palette based on specific school colours to promote themes of 'Women in Leadership' and academic excellence."
+  },
+  {
+    "id": "global",
+    "title": "Global",
+    "sector": "Media",
+    "description": "Europe's largest radio and outdoor advertising company needed a site to unify its entertainment brands like Capital and Heart. The solution is a media-rich platform that serves both consumers and advertisers. Crucial functionality includes a Brand Showcase with rich video integration and social media aggregation. The design is loud and entertainment-focused, utilizing a dark mode aesthetic with high-energy imagery of celebrity presenters and massive events to position the company as an entertainment hub."
+  },
+  {
+    "id": "hornsby-house-school",
+    "title": "Hornsby House School",
+    "sector": "Education",
+    "description": "A London prep school requiring a site that reflected its inclusive, community-focused ethos. The solution leads with engaging video content to capture the school's atmosphere immediately. Crucial functionality includes a secure Parent Login area and a megamenu designed to feature 'Did you know' facts about the school. The design employs a 'hijacked scroll' effect on the homepage to guide users through the narrative, using warm, friendly copy to appeal to local families."
+  },
+  {
+    "id": "local-trust",
+    "title": "Local Trust",
+    "sector": "Not-for-Profit",
+    "description": "A place-based funder supporting communities to achieve their ambitions. The solution puts the residents driving the change front and centre. Crucial functionality includes a bespoke interactive map of 'Big Local' areas to help users find funded communities nearby. The design is community-led, prioritizing user-generated content and real stories from residents to authenticate the charity's work, providing information in various accessible formats."
+  },
+  {
+    "id": "agency-inc",
+    "title": "Agency Inc",
+    "sector": "Media",
+    "description": "A B2B marketing agency based at Somerset House requiring a punchy portfolio site. The solution brings their colourful brand to life with a lightning-fast experience. Crucial functionality includes a dynamic Case Study reel and smooth AJAX page transitions for seamless navigation. The design is bold and B2B-focused, utilizing strong typography and placing 'Results' data such as ROI and leads generated at the forefront of the user experience."
+  },
+  {
+    "id": "keltbray",
+    "title": "Keltbray",
+    "sector": "Corporate",
+    "description": "A leading construction and engineering company needing to showcase innovation and technical capability. The solution moves beyond standard construction tropes to position them as technologically advanced. Crucial functionality includes an interactive Project Map of major infrastructure works and 3D model integration. The design breaks out the triangle components of their logo as graphic elements representing core values, using high-vis colours and rugged architectural photography."
+  },
+  {
+    "id": "emanuel-school",
+    "title": "Emanuel School",
+    "sector": "Education",
+    "description": "An independent day school in Battersea with a reputation for art and design. The solution strikes a balance between showcasing uniqueness and providing quick access to information. Crucial functionality includes a 'River & Rowing' feature highlighting their specific location-based offering. The design features a bespoke illustration at the top of the homepage as a homage to creative success, mixing red-brick architecture shots with London skyline views."
+  },
+  {
+    "id": "gc-partners",
+    "title": "GC Partners",
+    "sector": "Finance",
+    "description": "A global fintech company requiring a site to explain specialist international currency services. The solution brings a new brand to life with beautiful design and bespoke animations. Crucial functionality includes a Currency Converter widget and interactive data visualizations. The design is trustworthy and clean, utilizing blue tones and simplified 'How it Works' graphics to demystify foreign exchange for clients."
+  },
+  {
+    "id": "global-fashion-group",
+    "title": "Global Fashion Group",
+    "sector": "Corporate",
+    "description": "The leading online fashion destination in growth markets needed a corporate site reflecting its industry. The solution is a modern, engaging digital experience. Crucial functionality includes a custom-built interactive WebGL globe to showcase their global presence and an Investor Relations centre. The design is editorial and fashion-forward, resembling a high-end fashion magazine rather than a traditional corporate holding site."
+  },
+  {
+    "id": "mn2s",
+    "title": "MN2S",
+    "sector": "Media",
+    "description": "A global talent and PR agency looking for a modern, vibrant new website. The solution was a dynamic experience that shows off their array of talent and services. Crucial functionality includes a searchable Talent Database for DJs and celebrities. The design is high-energy and nightlife-oriented, utilizing dark backgrounds and vibrant photos of artists to appeal to promoters and booking agents."
+  },
+  {
+    "id": "quantexa",
+    "title": "Quantexa",
+    "sector": "Finance",
+    "description": "A global data and analytics software company helping organizations make trusted decisions. The solution delivered a tech-forward brand and high-end brochure site. Crucial functionality includes a Resource Hub for whitepapers and abstract 'node and connecting' animations. The design uses these custom animations to dynamically translate complex data logic into a clear signature visual language, illustrating the power of context."
+  },
+  {
+    "id": "bradfield-college",
+    "title": "Bradfield College",
+    "sector": "Education",
+    "description": "A leading independent school wanting to showcase its 'Education for Life' philosophy. The solution is a content-led site that highlights deep thinking from staff. Crucial functionality includes a Greek Theatre feature highlighting their famous facility. The design focuses on topical articles and candid photography of students in social and academic settings to create a compelling and insightful user experience."
+  },
+  {
+    "id": "isams",
+    "title": "iSAMS",
+    "sector": "Education",
+    "description": "The leading web-based Management Information System (MIS) for schools. The solution positioned them as a leading international technology company. Crucial functionality includes a Partner Directory and a Demo Request workflow. The design is SaaS-focused, utilizing screenshots of the software, feature benefit grids, and trust badges from school clients to build credibility."
+  },
+  {
+    "id": "pulsar",
+    "title": "Pulsar",
+    "sector": "Media",
+    "description": "An advanced social listening platform requiring a site to present complex features simply. The solution identifies and presents compelling messages about audience intelligence. Crucial functionality includes interactive Data Visualization examples. The design is extremely modern and data-centric, using abstract 3D data clouds and vibrant gradients to demonstrate their cutting-edge AI capabilities."
+  },
+  {
+    "id": "eastbourne-college",
+    "title": "Eastbourne College",
+    "sector": "Education",
+    "description": "A secondary school on the south coast needing a distinct identity. The solution implemented a new identity based on 'Blue Sky Learning'. Crucial functionality includes a Coastal Location map emphasizing their setting. The design leans heavily on the sea and beach proximity, using blues and open-air photography to sell a healthy, active lifestyle alongside academic rigour."
+  },
+  {
+    "id": "jcdecaux",
+    "title": "JCDecaux",
+    "sector": "Media",
+    "description": "The world's largest outdoor advertising company needed a site for their London Digital Network (LDN). The solution was a web application to assist sales teams. Crucial functionality includes a 'Gigapixel' 360-degree panorama of London and a SmartBRICS platform allowing advertisers to plot campaigns on a map. The design is visual-first, treating the website as a digital billboard to showcase high-impact campaigns."
+  },
+  {
+    "id": "eurocity",
+    "title": "EuroCity",
+    "sector": "Property",
+    "description": "A luxury tower complex in Gibraltar requiring an immersive sales tool. The solution created an interactive online experience using video and VR content. Crucial functionality includes a Virtual Reality exploration of towers and gardens, and an interactive apartment availability checker. The design uses swooping video and 3D camera moves to give visitors a sense of scale and reflect the Mediterranean luxury lifestyle."
+  },
+  {
+    "id": "national-brain-appeal",
+    "title": "National Brain Appeal",
+    "sector": "Not-for-Profit",
+    "description": "The charity dedicated to the National Hospital for Neurology and Neurosurgery required a digital platform to raise vital funds. The solution was a mobile-friendly site that integrates fundraising seamlessly. Crucial functionality includes a custom donation form fully integrated into the website rather than a third-party site, alongside 'Fundraising Pages' and 'Tribute Funds' for community engagement. The design is sensitive and human, utilizing patient stories and interpreting 'Brain' iconography artistically rather than clinically to avoid an overly medical aesthetic."
+  },
+  {
+    "id": "build-it",
+    "title": "Build It",
+    "sector": "Media",
+    "description": "Britain's longest-running self-build magazine needed to migrate thousands of articles to a new system while improving user experience. The solution involved a complex data migration and a structural redesign to handle the vast content library. Crucial functionality includes a 'Project Progress' tracker for users and a searchable archive of thousands of articles. The design uses 'Construction' motifs such as blueprints and bright yellows mixed with community photography to show the tangible output of the magazine's advice."
+  },
+  {
+    "id": "plas-dinam-country-house",
+    "title": "Plas Dinam Country House",
+    "sector": "Property",
+    "description": "A historic country house in Wales needing to showcase its grandeur for weddings and events. The solution focuses on visual storytelling to communicate the scale and beauty of the venue. Crucial functionality includes full-screen image 'tours', full-width sliders, and an 'Availability Calendar' for booking enquiries. The design is romantic and rustic, utilizing soft-focus photography, script fonts, and Pinterest-style layouts to appeal to couples planning their weddings."
+  },
+  {
+    "id": "andrew-lloyd-webber",
+    "title": "Andrew Lloyd Webber",
+    "sector": "Media",
+    "description": "The world-renowned composer required a website to coincide with his autobiography launch and showcase his career. The solution is a media-rich portfolio celebrating his musical legacy. Crucial functionality includes an interactive 'Production Timeline' of his musicals and embedded audio clips from his famous scores. The design is theatrical and dramatic, employing high-contrast lighting effects, gold typography, and archival imagery to reflect his status in the theatre world."
+  },
+  {
+    "id": "e-act",
+    "title": "E-ACT",
+    "sector": "Education",
+    "description": "A multi-academy trust with 25 academies requiring a unified digital identity. The solution delivered a full corporate identity refresh and a scalable web platform. Crucial functionality includes a 'Find a School' search tool and the deployment of two distinct WordPress themes across 25 separate academy sites to ensure consistency. The design is corporate and unified, establishing a consistent brand hierarchy while allowing individual academies to post local news and updates."
+  },
+  {
+    "id": "si-partners",
+    "title": "SI Partners",
+    "sector": "Finance",
+    "description": "A global consultancy and M&A advisor for the creative sectors needing a rebrand. The solution bridged the gap between corporate finance and the creative industries they serve. Crucial functionality includes a 'Global Deal Map' and interactive data visualizations to showcase their track record. The design is sophisticated and creative-friendly, utilizing a new logo and visual identity that appeals to both 'suits' (finance) and 'creatives' (agencies)."
+  },
+  {
+    "id": "globecast",
+    "title": "Globecast",
+    "sector": "Corporate",
+    "description": "A worldwide leader in broadcasting solutions needing to update its digital presence to reflect a modern, human-centric approach. The solution channeled the company's forward-thinking ethos and global reach. Crucial functionality includes a 'Network Map' showing satellite coverage and a simplified navigation structure with functional icons. The design is technical yet accessible, using 'Globe' imagery and connection lines to visualize worldwide reach while appealing to customers on a human level."
+  },
+  {
+    "id": "amazon",
+    "title": "Amazon",
+    "sector": "Corporate",
+    "description": "Amazon required a one-stop knowledge hub for retailers selling their products globally. The solution was a dynamic suite of websites customisable for each retailer's needs. Crucial functionality includes a video-focused training centre, in-depth user tracking, and customisable quizzes and competitions to incentivise staff learning. The design follows Amazon's strict brand guidelines (Orange/Black) but adopts a mobile-first, UX-focused layout to encourage staff engagement on-the-go."
+  },
+  {
+    "id": "zenith",
+    "title": "Zenith",
+    "sector": "Media",
+    "description": "A global media agency part of Publicis Media requiring a site for its global rebrand. The solution was a central global website and a theme for local markets. Crucial functionality includes 'Adspend Forecast Live!', an interactive zone allowing users to query data via interactive charts and graphs, and an Excel add-on for real-time data publishing. The design is clean, blue, and corporate, focusing on the 'Peak' (Zenith) metaphor with upward-trending graphical motifs."
+  },
+  {
+    "id": "st-edwards-school",
+    "title": "St Edward's School",
+    "sector": "Education",
+    "description": "A leading independent school in Oxford wanting to highlight its modern outlook and co-curricular breadth. The solution used the school's new brand identity to create a dynamic online presence. Crucial functionality includes a 'Beyond Teddies' careers section and a dynamic grid layout on the homepage to showcase the variety of student life. The design prominently features yellow graphic elements from the new brand identity and uses unusual navigation placements to reflect their alternative reputation."
+  },
+  {
+    "id": "the-north-wall-theatre",
+    "title": "The North Wall Theatre",
+    "sector": "Not-for-Profit",
+    "description": "An award-winning performing arts centre needing to showcase performances and its ArtsLab offering. The solution compliments the venue's quirky and artsy character. Crucial functionality includes a 'Box Office' ticketing integration for seamless booking. The design uses the angled edge of their logo as a prominent visual feature throughout the site, utilizing high-contrast visuals and poster art to promote upcoming shows."
+  },
+  {
+    "id": "giving-tuesday",
+    "title": "Giving Tuesday",
+    "sector": "Not-for-Profit",
+    "description": "A global charitable movement needing a focal point for UK activity. The solution involved a new brand identity and a website to drive engagement on the day. Crucial functionality includes a 'Resource Toolkit' download area for charities and partners. The design is simple, iconic (utilizing the Heart logo), and highly social-shareable, acting as a hub for a viral campaign rather than a traditional informational site."
+  },
+  {
+    "id": "london-cardiovascular-clinic",
+    "title": "London Cardiovascular Clinic",
+    "sector": "Corporate",
+    "description": "A Harley Street private cardiology clinic serving high-net-worth individuals. The solution presents the clinic as a dedicated team of leading practitioners. Crucial functionality includes 'Consultant Profiles' and an 'Appointment Request' workflow. The design is reassuring, clean, and clinical, using white space, professional headshots, and subtle animations to build patient confidence and convey a high-quality service."
+  },
+  {
+    "id": "arax-properties",
+    "title": "Arax Properties",
+    "sector": "Property",
+    "description": "A London-based property investment firm requiring a site to reinforce its high-quality brand. The solution is clear, concise, and slick. Crucial functionality includes a secure 'Investor Login' area for sensitive documentation. The design is high-end corporate, using architectural abstracts, a muted palette, and sophisticated typography to convey solidity, wealth, and a premium service."
+  },
+  {
+    "id": "cambridge-enterprise",
+    "title": "Cambridge Enterprise",
+    "sector": "Corporate",
+    "description": "The commercialisation arm of the University of Cambridge helping students and staff turn ideas into businesses. The solution implemented a new brand while retaining existing architecture. Crucial functionality includes a 'Portfolio Company' directory and an 'IP Licensing' search tool. The design bridges the gap between 'Academic' tradition (Cambridge Blue) and 'Venture Capital' modernity (sleek, modern layouts) to appeal to both researchers and investors."
+  },
+  {
+    "id": "marlborough-partners",
+    "title": "Marlborough Partners",
+    "sector": "Finance",
+    "description": "A leading debt advisory business needing a site to present key info to private equity clients. Since content isn't generated regularly, the solution was a high-impact 'one-page' site. Crucial functionality includes a 'Transaction Archive' and parallax scrolling. The design is serious, text-led, and professional, using stunning imagery and a 'wow-factor' scroll experience to enhance the brand above competitors."
+  },
+  {
+    "id": "hanover",
+    "title": "Hanover",
+    "sector": "Corporate",
+    "description": "An award-winning communications consultancy requiring a site for its rebrand based on 'uncommon sense'. The solution coincided with the new brand launch. Crucial functionality includes a 'Team' explorer and 'Strategy' breakdowns. The design features a striking video of ink in water inspired by the Rorschach test to reveal shapes, combined with a 'City of London' authoritative aesthetic."
+  }
+]
