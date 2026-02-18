@@ -1,6 +1,7 @@
 import json
 import numpy as np
 import streamlit as st
+import streamlit.components.v1 as components
 from sentence_transformers import SentenceTransformer
 from sklearn.metrics.pairwise import cosine_similarity
 
@@ -29,6 +30,96 @@ def build_embeddings(texts: tuple[str, ...]) -> np.ndarray:
     """Encode all project texts once and cache the result."""
     model = load_model()
     return model.encode(list(texts), show_progress_bar=False)
+
+
+# ---------------------------------------------------------------------------
+# In-browser AI comparison (WebLLM via WebGPU)
+# ---------------------------------------------------------------------------
+
+WEBLLM_MODEL = "Qwen3-0.6B-q4f16_1-MLC"
+
+
+def _js_escape(s: str) -> str:
+    """Escape a Python string for safe embedding inside a JS template literal."""
+    return (
+        s.replace("\\", "\\\\")
+        .replace("`", "\\`")
+        .replace("$", "\\$")
+    )
+
+
+def build_comparison_component(query: str, project: dict) -> str:
+    """Return a self-contained HTML page that loads WebLLM in a Web Worker,
+    runs Qwen3-0.6B entirely in-browser via WebGPU, and streams the comparison."""
+
+    q = _js_escape(query)
+    title = _js_escape(project["title"])
+    sector = _js_escape(project["sector"])
+    desc = _js_escape(project["description"])
+
+    return f"""<!DOCTYPE html>
+<html><head><style>
+*{{margin:0;padding:0;box-sizing:border-box}}
+body{{font-family:sans-serif;background:#161616;color:#e0e0e0;padding:16px 20px}}
+#status{{color:#aaa;font-size:.85rem;margin-bottom:8px}}
+#bar-wrap{{background:#333;border-radius:6px;height:6px;width:100%;margin-bottom:14px;display:none}}
+#bar-fill{{height:6px;border-radius:6px;background:linear-gradient(90deg,#BB86FC,#03DAC6);width:0%;transition:width .3s}}
+#output{{font-size:.9rem;line-height:1.7;color:#ccc;white-space:pre-wrap}}
+</style></head><body>
+<div id="status">Checking WebGPU…</div>
+<div id="bar-wrap"><div id="bar-fill"></div></div>
+<div id="output"></div>
+<script type="module">
+import {{ CreateWebWorkerMLCEngine }} from "https://esm.run/@mlc-ai/web-llm";
+
+const $ = id => document.getElementById(id);
+
+/* ---- guard ---- */
+if (!navigator.gpu) {{
+  $("status").textContent = "WebGPU is not supported in this browser. Please use Chrome or Edge.";
+  throw new Error("no WebGPU");
+}}
+
+/* ---- 3-line Web Worker (identical to chat.webllm.ai) ---- */
+const workerBlob = new Blob([`
+import {{ WebWorkerMLCEngineHandler }} from "https://esm.run/@mlc-ai/web-llm";
+const handler = new WebWorkerMLCEngineHandler();
+self.onmessage = (msg) => {{ handler.onmessage(msg); }};
+`], {{ type: "text/javascript" }});
+
+const worker = new Worker(URL.createObjectURL(workerBlob), {{ type: "module" }});
+
+/* ---- load engine (weights cached in browser Cache Storage) ---- */
+$("status").textContent = "Loading Qwen3-0.6B — first visit downloads ~400 MB, then cached…";
+$("bar-wrap").style.display = "block";
+
+const engine = await CreateWebWorkerMLCEngine(worker, "{WEBLLM_MODEL}", {{
+  initProgressCallback: (p) => {{
+    $("status").textContent = p.text;
+    if (p.progress != null) $("bar-fill").style.width = (p.progress * 100) + "%";
+  }}
+}});
+
+$("bar-wrap").style.display = "none";
+$("status").textContent = "Generating comparison…";
+
+/* ---- inference ---- */
+const completion = await engine.chat.completions.create({{
+  messages: [
+    {{ role: "system", content: "You are a concise web-design agency assistant. Compare a client brief with a portfolio project. Explain why the project is relevant — overlapping themes like industry, audience, features, design approach, tech requirements — and note meaningful differences. 3-5 short paragraphs, plain text, no markdown. /no_think" }},
+    {{ role: "user", content: `CLIENT BRIEF:\\n`+`{q}`+`\\n\\nPORTFOLIO PROJECT:\\nTitle: {title}\\nSector: {sector}\\nDescription: {desc}` }}
+  ],
+  stream: true,
+  temperature: 0.7,
+  max_tokens: 512
+}});
+
+$("status").textContent = "";
+const out = $("output");
+for await (const chunk of completion) {{
+  out.textContent += chunk.choices[0]?.delta?.content || "";
+}}
+</script></body></html>"""
 
 
 # ---------------------------------------------------------------------------
@@ -196,17 +287,20 @@ def main() -> None:
     with col2:
         selected_sector = st.selectbox("Sector", sector_options)
 
-    # --- Session state for "See More" ---
+    # --- Session state ---
     if "num_results" not in st.session_state:
         st.session_state.num_results = 5
     if "last_query" not in st.session_state:
         st.session_state.last_query = ""
     if "last_sector" not in st.session_state:
         st.session_state.last_sector = ""
+    if "active_comparison" not in st.session_state:
+        st.session_state.active_comparison = None
 
-    # Reset counter when the search inputs change
+    # Reset when search inputs change
     if query != st.session_state.last_query or selected_sector != st.session_state.last_sector:
         st.session_state.num_results = 5
+        st.session_state.active_comparison = None
         st.session_state.last_query = query
         st.session_state.last_sector = selected_sector
 
@@ -223,6 +317,16 @@ def main() -> None:
 
         for project in visible:
             st.markdown(render_card(project), unsafe_allow_html=True)
+
+            pid = project["id"]
+            if st.session_state.active_comparison == pid:
+                # Render the WebLLM component inline under this card
+                html = build_comparison_component(query, project)
+                components.html(html, height=420, scrolling=True)
+            else:
+                if st.button("Why this match?", key=f"compare_{pid}"):
+                    st.session_state.active_comparison = pid
+                    st.rerun()
 
         # "See More" button
         if st.session_state.num_results < len(results):
