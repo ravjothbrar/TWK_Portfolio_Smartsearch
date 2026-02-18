@@ -17,7 +17,7 @@ The tool lets you paste any client email or brief into a search box and instantl
 
 Latency is under 500ms after the initial load — all embeddings are cached in-browser on first visit.
 
-When running locally with [Ollama](https://ollama.com), each result also gets a **"Why this match?"** button. Clicking it sends the client brief and the portfolio project description to a local AI model, which streams a plain-English comparison explaining why the project is relevant — covering overlapping themes like industry, features, design approach, and technical requirements. Everything runs on-device; no data leaves your machine.
+Each result also has a **"Why this match?"** button. Clicking it loads [Qwen3-0.6B](https://huggingface.co/mlc-ai/Qwen3-0.6B-q4f16_1-MLC) directly in your browser via [WebLLM](https://webllm.mlc.ai/) (WebGPU), then streams a plain-English comparison explaining why the project is relevant — covering overlapping themes like industry, features, design approach, and technical requirements. The model weights (~400 MB) are downloaded once on first use and cached in the browser; subsequent visits load instantly. Everything runs on-device; no data leaves your machine. Requires a WebGPU-capable browser (Chrome or Edge).
 
 ---
 
@@ -110,16 +110,13 @@ streamlit run app.py
 
 The app will open at `http://localhost:8501`. The first run downloads the embedding model (~80 MB) and computes embeddings — subsequent runs are instant.
 
-### Enabling the AI comparison feature
+### AI comparison ("Why this match?")
 
-The "Why this match?" feature requires [Ollama](https://ollama.com) running locally:
+The in-browser comparison feature runs entirely client-side via WebGPU — no extra server setup needed. Requirements:
 
-1. Install Ollama from [ollama.com](https://ollama.com).
-2. Pull a model (e.g. `ollama pull llama3.2` or any model you prefer).
-3. Start Ollama (`ollama serve` or just open the app — it runs in the background).
-4. Restart the Streamlit app. A model selector will appear in the sidebar.
-
-The feature is automatically hidden when Ollama isn't detected, so the cloud deployment is unaffected.
+- **Browser:** Chrome or Edge (WebGPU support required)
+- **First use:** downloads Qwen3-0.6B model weights (~400 MB), cached automatically for future visits
+- **GPU:** any WebGPU-capable GPU (integrated graphics work fine for this model size)
 
 ---
 
@@ -170,4 +167,5 @@ Edit the relevant object in `TWK_final_portfolio.json` directly. The embeddings 
 | `torch`               | Backend for sentence-transformers      |
 | `numpy`               | Array operations                       |
 | `scikit-learn`        | Cosine similarity computation          |
-| `ollama`              | Local AI model client (for comparisons)|
+
+The **"Why this match?"** AI comparison uses [WebLLM](https://webllm.mlc.ai/) (`@mlc-ai/web-llm`) loaded from CDN — no Python dependency required.
