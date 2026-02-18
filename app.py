@@ -242,12 +242,28 @@ def render_card(project: dict) -> str:
 # Streamlit UI
 # ---------------------------------------------------------------------------
 
+def check_password() -> bool:
+    """Show a password prompt and return True once the correct password is entered."""
+    if st.session_state.get("authenticated"):
+        return True
+    pwd = st.text_input("Password", type="password", placeholder="Enter password")
+    if pwd and pwd == "ravjoth":
+        st.session_state.authenticated = True
+        st.rerun()
+    elif pwd:
+        st.error("Incorrect password.")
+    return False
+
+
 def main() -> None:
     st.set_page_config(
         page_title="TWK Smart Portfolio Search",
         page_icon="🔍",
         layout="centered",
     )
+
+    if not check_password():
+        st.stop()
 
     # Inject card styles once
     st.markdown(CARD_CSS, unsafe_allow_html=True)
